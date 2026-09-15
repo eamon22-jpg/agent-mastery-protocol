@@ -1,47 +1,47 @@
-# Agent Mastery Concept
+# Agent Mastery Protocol
 
-This folder contains the complete source for Eamon Bonner's interactive Agent Mastery concept page.
+An interactive concept for a more meaningful agent mastery system in VALORANT.
 
-## Publish with GitHub Pages
+**Concept by Eamon Bonner**
 
-1. Create an empty GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. Open the repository settings on GitHub.
-4. Select **Pages** under **Code and automation**.
-5. Set **Source** to **GitHub Actions**.
-6. Push to the `main` branch, or run the workflow from the **Actions** tab.
+## The problem
 
-GitHub will publish the page at one of these addresses:
+Competitive rank gives VALORANT players a clear goal, but it can also make a difficult session feel wasted. A player can improve, deepen their knowledge of an agent, and make good decisions without seeing that progress in their rank.
 
-- `https://YOUR-NAME.github.io/REPOSITORY-NAME/`
-- `https://YOUR-NAME.github.io/` for a repository named `YOUR-NAME.github.io`
+This can lead to player burnout, negatively affecting user retention.
 
-The workflow detects the repository name. A post-build step sets the correct asset path for either address.
+## The concept
 
-## Edit the page
+Agent Mastery Protocol expands Agent Gear into a long-term progression path for each agent. Players earn progress through matches, wins, and challenges that reflect the agent's role.
 
-- Edit the page copy in `app/page.tsx`.
-- Edit the page styles in `app/globals.css`.
-- Edit the three models in `components/`.
-- Replace `public/og.png` to change the social preview image.
+The system rewards useful play instead of isolated statistics. A Sova challenge could reward openings created through Recon Bolt, rather than the number of scans alone. This structure encourages players to understand their role and help their team.
 
-Each push to `main` publishes the latest version.
+## The rewards
 
-## Test locally
+Agent mastery unlocks distinctive cosmetics that cannot be purchased. These rewards give players a visible way to show their connection to an agent.
 
-Install Node.js 22. Then run:
+This prototype explores three examples:
 
-```sh
-npm ci --no-audit --no-fund
-npm run dev
-```
+- **Specialist's Knives** for Jett
+- **Trueflight** for Sova
+- **Masterwork Turret** for Killjoy
 
-Open `http://localhost:3000/`.
+Each model supports click-and-drag rotation and manual zoom controls.
 
-Run a production build with:
+## Design constraints
 
-```sh
-npm run build:pages
-```
+Every reward follows three rules:
 
-The static output appears in `dist/client`.
+- **Earned, not purchased:** Only agent mastery unlocks the reward.
+- **Team-aligned:** Progress reflects decisions that help the team.
+- **Competitively clear:** Cosmetics preserve timing, hitboxes, visibility, and essential cues.
+
+I want to give players another reason to care when they queue for a match. Rank can rise or fall, but the effort a player invests in an agent should still matter.
+
+## View the project
+
+[Open the interactive concept](https://eamon22-jpg.github.io/agent-mastery-protocol/)
+
+---
+
+This is an independent design concept. It is not affiliated with or endorsed by Riot Games.
