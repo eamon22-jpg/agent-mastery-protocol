@@ -82,6 +82,7 @@ export default function Home() {
         <p>
           I have played VALORANT since closed beta and reached rank 533 in North America. I want players to feel that the time they invest in an agent still matters, even when their rank moves in the wrong direction.
         </p>
+        <a className="concept-link" href="concept.html">Read the full concept <span aria-hidden="true">→</span></a>
         <div className="signature">
           <strong>Eamon Bonner</strong>
           <a href="mailto:eamonbonner22@gmail.com">eamonbonner22@gmail.com</a>

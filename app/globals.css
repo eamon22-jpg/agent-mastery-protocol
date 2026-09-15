@@ -56,9 +56,29 @@ figcaption span { display: block; max-width: 520px; margin: 0 auto; color: var(-
 .principle-list p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .closing { max-width: 650px; margin: 72px auto 0; text-align: center; }
 .closing > p { margin: 0 auto; font-size: clamp(20px, 2.5vw, 27px); font-weight: 650; line-height: 1.46; letter-spacing: -0.025em; }
+.concept-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 34px; border-bottom: 1px solid #b88a2d; color: #76530d; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; line-height: 1.8; text-transform: uppercase; }
+.concept-link:hover { color: var(--ink); border-color: var(--ink); }
+.concept-link:focus-visible { outline: 2px solid #916713; outline-offset: 5px; }
 .signature { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px 22px; margin-top: 56px; color: var(--muted); font-size: 11px; }
 .signature strong { color: var(--ink); }
 .signature a:hover { text-decoration: underline; }
+
+.concept-page { width: min(100% - 40px, 680px); margin: 0 auto; padding: 76px 0 90px; }
+.concept-back { display: inline-flex; gap: 8px; margin-bottom: 68px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+.concept-back:hover { color: var(--ink); }
+.concept-back:focus-visible { outline: 2px solid #916713; outline-offset: 5px; }
+.concept-header { margin-bottom: 70px; }
+.concept-header .section-label { margin-bottom: 17px; }
+.concept-header h1 { margin: 0; font-size: clamp(40px, 7vw, 64px); line-height: 1.03; letter-spacing: -0.055em; }
+.concept-deck { max-width: 560px; margin: 24px 0 0; color: #3d413f; font-size: clamp(19px, 2.8vw, 23px); line-height: 1.5; }
+.concept-author { margin: 23px 0 0; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.concept-body section { margin-top: 58px; padding-top: 26px; border-top: 1px solid var(--line); }
+.concept-body h2 { margin: 0 0 20px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
+.concept-body p { margin: 0 0 18px; color: #343836; font-size: 17px; line-height: 1.72; }
+.concept-body ul { margin: 7px 0 20px; padding-left: 21px; color: #343836; }
+.concept-body li { margin: 0 0 11px; padding-left: 5px; font-size: 16px; line-height: 1.65; }
+.concept-body strong { color: var(--ink); }
+.concept-disclaimer { margin-top: 64px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.6; }
 
 @media (max-width: 600px) {
   .simple-page { width: min(100% - 24px, 760px); padding-top: 76px; }
@@ -74,6 +94,9 @@ figcaption span { display: block; max-width: 520px; margin: 0 auto; color: var(-
   .principle-list { grid-template-columns: 1fr; gap: 28px; }
   .closing { margin-top: 64px; }
   .signature { flex-direction: column; margin-top: 55px; }
+  .concept-page { width: min(100% - 32px, 680px); padding-top: 44px; }
+  .concept-back { margin-bottom: 52px; }
+  .concept-header { margin-bottom: 58px; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
